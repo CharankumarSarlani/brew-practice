@@ -19,13 +19,13 @@ function sinWave(amplitude, angle, phase) {
 }
 
 function wave() {
-  let angle = 0;
-  while (true) {
+  let angle = 0;let count = 0;
+  while (count < 100) {
 
     repeat(sinWave(30, angle, 65), '🟢');
     repeat(sinWave(30, -angle, 65), '🔴');
 
-    angle += 1;
+    angle += 1;count++;
   }   
 }  
 
